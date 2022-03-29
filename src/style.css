@@ -5,7 +5,7 @@
 }
 :root {
   --background-blur-color: rgba(0, 0, 0, 0.63);
-  --accent-color: black;
+  --accent-color: rgb(0, 0, 0);
 }
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600&display=swap");
 
@@ -58,6 +58,12 @@ header {
   place-content: center;
 }
 
+header .first-word {
+  color: orangered;
+}
+header .second-word {
+  font-weight: 400;
+}
 /* footer */
 footer {
   height: 100%;
@@ -131,4 +137,42 @@ footer {
 .menu-item p {
   text-align: center;
   min-height: 50px;
+}
+
+/* contact */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 900px;
+  color: white;
+  font-size: 1.3rem;
+  background-color: var(--background-blur-color);
+  gap: 20px;
+  padding: 30px 0;
+}
+
+h2 {
+  text-align: center;
+}
+.form-container > div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  gap: 1rem;
+}
+
+textarea {
+  width: 260px;
+  height: 140px;
+  align-self: center;
+}
+
+button {
+  width: 160px;
+  font-size: 1.3rem;
+  border: none;
+  background-color: white;
+  align-self: center;
 }
