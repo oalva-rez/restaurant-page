@@ -8,7 +8,7 @@ let homeTab = document.querySelector(".home-tab");
 let menuTab = document.querySelector(".menu-tab");
 let contactTab = document.querySelector(".contact-tab");
 
-content.appendChild(addMenu());
+content.appendChild(addHome());
 
 homeTab.addEventListener("click", () => {
   content.innerHTML = "";
