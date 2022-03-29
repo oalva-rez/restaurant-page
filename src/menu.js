@@ -1,7 +1,7 @@
-import ramen from "./ramen.jpg";
-import miso from "./miso.jpg";
-import spanish from "./spanish-roll.jpg";
-import spicy from "./spicy-tuna.jpg";
+import ramen from "./items-imgs/ramen.jpg";
+import miso from "./items-imgs/miso.jpg";
+import spanish from "./items-imgs/spanish-roll.jpg";
+import spicy from "./items-imgs/spicy-tuna.jpg";
 function addMenu() {
   let items = {
     Ramen: {
