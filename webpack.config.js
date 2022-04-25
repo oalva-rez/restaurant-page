@@ -16,7 +16,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Salsipuedes Home",
+      title: "Mystic Mocha Cafe",
       filename: "index.html",
       template: path.resolve(__dirname, "src/temp.html"),
     }),

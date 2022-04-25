@@ -1,18 +1,27 @@
 function addHome() {
-  let homeContainer = document.createElement("div");
-  let video = document.createElement("iframe");
-  let homeDesc = document.createElement("div");
-  homeDesc.textContent =
-    "This song of the week is brought to you by costumer of the week Andrea Lizarraga!";
-  let vidURL = "https://www.youtube.com/embed/FFnjZY1vRzk";
-  homeContainer.classList.add("vid-container");
-  video.title = "Song of the week";
-  video.src = vidURL;
-  video.setAttribute("frameborder", 0);
-  video.classList.add("video");
-  homeDesc.classList.add("home-desc");
-  homeContainer.append(video);
-  homeContainer.append(homeDesc);
+  let homeContainer = document.createElement("main");
+  let leftHalf = document.createElement("section");
+  let rightHalf = document.createElement("section");
+  let coffeeLogo = new Image();
+  leftHalf.classList.add("left-half");
+  rightHalf.classList.add("right-half");
+  homeContainer.classList.add("home-container");
+
+  homeContainer.appendChild(leftHalf);
+  homeContainer.appendChild(rightHalf);
+
+  let subheading = document.createElement("h2");
+  let logo = document.createElement("img");
+  logo.classList.add("home-logo");
+  subheading.classList.add("home-subheading");
+
+  subheading.textContent =
+    "Located in the heart of North Park. Mystic Mocha is a community oasis promoting health and well-being through natural foods, peaceful environments and friendly service.";
+
+  coffeeLogo.src = "logo-coffee.png";
+  logo.src = coffeeLogo.src;
+  rightHalf.appendChild(logo);
+  rightHalf.appendChild(subheading);
   return homeContainer;
 }
 
