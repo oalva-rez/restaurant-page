@@ -25,7 +25,9 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   height: 100vh;
 }
-
+.no-bg {
+  background-image: none;
+}
 .frosted-bg {
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.11);
@@ -93,7 +95,7 @@ nav li a:hover::after {
 }
 
 .company-name .first-word {
-  color: #795f37;
+  color: orangered;
 }
 .company-name .second-word {
   font-weight: 400;
