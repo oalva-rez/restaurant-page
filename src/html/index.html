@@ -11,14 +11,36 @@
     <title>Mystic Mocha Cafe</title>
   </head>
   <body class="no-bg">
+    <ul class="menu__box">
+      <li><a href="index.html" class="home-tab menu__item active">Home</a></li>
+      <li>
+        <a href="restaurant.html" class="restaurant-tab menu__item"
+          >Restaurant</a
+        >
+      </li>
+      <li><a href="menu.html" class="menu-tab menu__item">Menu</a></li>
+      <li><a href="contact.html" class="contact-tab menu__item">Contact</a></li>
+      <li>
+        <a href="location.html" class="location-tab menu__item">Location</a>
+      </li>
+      <li>
+        <a href="catering.html" class="catering-tab menu__item">Catering</a>
+      </li>
+    </ul>
     <nav>
       <ul>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+        </div>
         <li><a href="index.html" class="home-tab active">Home</a></li>
         <li>
           <a href="restaurant.html" class="restaurant-tab">Restaurant</a>
         </li>
         <li><a href="menu.html" class="menu-tab">Menu</a></li>
-        <a href="index.html">
+        <a href="index.html" class="logo-container">
           <h1 class="company-name">
             <span class="first-word">Mystic Mocha</span>
             <span class="second-word">Cafe</span>
@@ -30,6 +52,17 @@
       </ul>
     </nav>
     <div class="home-wrapper">
+      <img
+        src="/images/mexico-outline.png"
+        alt="outline drawing of mexico's states"
+        class="mexico-outline trans-bg"
+      />
+
+      <img
+        src="/images/coffee-logo-transparent.png"
+        alt="clip art of coffee cup "
+        class="coffee-transparent trans-bg"
+      />
       <div class="home">
         <div class="home-images">
           <img
@@ -51,9 +84,18 @@
             Park, San Diego.
           </h3>
           <p>
-            Mystic Mocha is an urban oasis cultivating health and community
-            through whole foods, peaceful atmosphere and friendly service.
+            Our people are the kindest, most hardworking and talented in the
+            business. We’re an impossibly eclectic group of coffee experts,
+            artists, writers, sensory scientists, bakers, designers, and
+            all-around dreamers.
           </p>
+          <a href="catering.html" class="order-catering">Order Catering Now</a>
+        </div>
+        <div class="home-social">
+          <a href=""><i class="fa-brands fa-snapchat"></i></a>
+          <a href=""><i class="fa-brands fa-yelp yelp"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook-square"></i></a>
         </div>
       </div>
     </div>

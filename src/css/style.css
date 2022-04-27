@@ -22,7 +22,6 @@ body {
   background-attachment: fixed;
   grid-template: 60px 1fr 40px / 1fr;
   font-family: "Bai Jamjuree", sans-serif;
-  height: 100vh;
 }
 .no-bg {
   background-image: none;
@@ -42,12 +41,16 @@ body {
 nav ul {
   display: flex;
   gap: 2.5rem;
-  height: 100%;
+  height: 60px;
   text-align: center;
   justify-content: center;
   background-color: var(--nav-footer-color);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 nav li {
@@ -61,8 +64,8 @@ nav a {
   color: black;
   font-size: 1.1rem;
 }
-nav ul .active {
-  color: #eb9549;
+.active {
+  color: #eb9549 !important;
 }
 nav li {
   width: min-content;
@@ -81,6 +84,86 @@ nav li a:hover::after {
 }
 
 /* mobile nav */
+#menu__toggle {
+  opacity: 0;
+  z-index: 9999;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  display: none;
+  top: 29px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  z-index: 6000;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+@media (max-width: 855px) {
+  nav a:not(.logo-container) {
+    display: none;
+  }
+  .menu__btn {
+    display: block;
+  }
+}
 
 /* company-name */
 .company-name {
@@ -91,6 +174,7 @@ nav li a:hover::after {
   font-size: 2rem;
   font-weight: 600;
   color: black;
+  white-space: nowrap;
 }
 
 .company-name .first-word {
@@ -108,4 +192,11 @@ footer {
   display: grid;
   place-items: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 9999;
+}
+
+@media (max-width: 965px) {
+  nav ul {
+    gap: 1.5rem;
+  }
 }

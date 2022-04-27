@@ -12,13 +12,16 @@ import addContact from "./contact.js";
 import { initForm, validateForm } from "./catering.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-  if (
-    window.location.pathname == "/index.html" ||
-    window.location.pathname == "/"
-  ) {
-    let content = document.querySelector(".content");
-    content.appendChild(addHome());
-  }
+  let hamburgerBtn = document.querySelector("#menu__toggle");
+
+  hamburgerBtn.addEventListener("input", () => {
+    if (hamburgerBtn.checked) {
+      document.querySelector(".menu__box").style.left = "0";
+    } else if (!hamburgerBtn.checked) {
+      document.querySelector(".menu__box").style.left = "-100%";
+    }
+  });
+
   if (window.location.pathname == "/menu.html") {
     let content = document.querySelector(".content");
     content.appendChild(addMenu());
