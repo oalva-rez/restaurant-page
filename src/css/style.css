@@ -16,7 +16,6 @@
 body {
   display: grid;
   background-image: url("/src/images/lofi-bg.jpg");
-
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -160,6 +159,7 @@ nav li a:hover::after {
   nav a:not(.logo-container) {
     display: none;
   }
+
   .menu__btn {
     display: block;
   }
