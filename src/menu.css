@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-blur-color: rgba(0, 0, 0, 0.742);
+  --accent-color: rgb(0, 0, 0);
+}
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+
+/* menu content */
+.menu-container {
+  display: grid;
+  border-radius: 10px;
+
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1frpx));
+  gap: 1.3rem;
+  color: white;
+  margin: 65px auto;
+}
+.menu-item {
+  background-color: white;
+  color: black;
+  border-left: 9px solid #795f37;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-item > * {
+  padding: 2px;
+}
+.menu-item h2 {
+  border-bottom: 1px solid #795f37;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.menu-item img {
+  width: 250px;
+  height: 130px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 68, 0, 0.21);
+  margin: 15px 0;
+}
+.menu-item p {
+  text-align: center;
+  min-height: 50px;
+}
+.menu-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-top: 1px solid #795f37;
+  margin-top: 8px;
+  letter-spacing: 0.1rem;
+}

@@ -9,44 +9,52 @@ import matcha from "./items-imgs/matcha.jpg";
 function addMenu() {
   let items = {
     Ramen: {
-      desc: "This item is a fan favorite among locals. Amazing dish for the heart and soul",
+      desc: "This item is a fan favorite among locals. Half off every Wednesday.",
       img: ramen,
       price: "$9.75",
+      alt: "A bowl of ramen soup.",
     },
     "Miso Soup": {
       desc: "The heal-all dish to always be there for you when 'they' weren't.",
       img: miso,
       price: "$5.75",
+      alt: "A bowl of miso soup.",
     },
     "Spanish Roll": {
       desc: "A lovers favorite once eaten by the ancient gods.",
       img: spanish,
       price: "$12.75",
+      alt: "Sushi rolls with salmon.",
     },
     "Spicy Tuna": {
       desc: "A cult classic. Dont be friends with spicy-tuna haters.",
       img: spicy,
       price: "$7.75",
+      alt: "Sushi roll with spicy tuna inside.",
     },
     Boba: {
       desc: "San Diego heat too much? Cool down with some cold boba.",
       img: boba,
       price: "$4.75",
+      alt: "A plastic cup with boba milk tea.",
     },
     Latte: {
       desc: "Morning rush remedy. Whats rush hour when you have a perfect latte?",
       img: latte,
       price: "$4.75",
+      alt: "A foamy hot cup of latte coffee",
     },
     Machiatto: {
-      desc: "This creamy half milk half coffee invention created by some very loving people.",
+      desc: "This creamy half milk half coffee invention created by pure genius.",
       img: machiatto,
       price: "$4.50",
+      alt: "Pouring hot coffee into machiatto",
     },
     Matcha: {
-      desc: "Mystic Mochas costumer favorite. Rated best matcha tea in all of San Diego.",
+      desc: "Mystic Mochas costumer favorite. Rated best matcha tea in CA.",
       img: matcha,
       price: "$3.75",
+      alt: "hot matcha latte with white foam",
     },
   };
   let menuContainer = document.createElement("div");

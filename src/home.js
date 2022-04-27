@@ -2,6 +2,10 @@ function addHome() {
   let homeContainer = document.createElement("main");
   let leftHalf = document.createElement("section");
   let rightHalf = document.createElement("section");
+  let heading = document.createElement("h2");
+  let subheading = document.createElement("h3");
+  let logo = document.createElement("img");
+
   let coffeeLogo = new Image();
   leftHalf.classList.add("left-half");
   rightHalf.classList.add("right-half");
@@ -10,8 +14,9 @@ function addHome() {
   homeContainer.appendChild(leftHalf);
   homeContainer.appendChild(rightHalf);
 
-  let subheading = document.createElement("h2");
-  let logo = document.createElement("img");
+  heading.textContent = "Good Friends. Good Coffee. Good Times.";
+  heading.classList.add("home-heading");
+
   logo.classList.add("home-logo");
   subheading.classList.add("home-subheading");
 
@@ -20,6 +25,7 @@ function addHome() {
 
   coffeeLogo.src = "logo-coffee.png";
   logo.src = coffeeLogo.src;
+  rightHalf.appendChild(heading);
   rightHalf.appendChild(logo);
   rightHalf.appendChild(subheading);
   return homeContainer;
