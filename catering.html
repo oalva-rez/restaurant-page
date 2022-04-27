@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c830af475b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Mystic Mocha Cafe</title>
+  <script defer src="main.ed8dbb7e1bec68a5096d.js"></script></head>
+  <body>
+    <div class="frosted-bg"></div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="home-tab">Home</a></li>
+        <li>
+          <a href="restaurant.html" class="restaurant-tab">Restaurant</a>
+        </li>
+        <li><a href="menu.html" class="menu-tab">Menu</a></li>
+        <a href="index.html">
+          <h1 class="company-name">
+            <span class="first-word">Mystic Mocha</span>
+            <span class="second-word">Cafe</span>
+          </h1>
+        </a>
+        <li><a href="contact.html" class="contact-tab">Contact</a></li>
+        <li><a href="location.html" class="location-tab">Location</a></li>
+        <li>
+          <a href="catering.html" class="catering-tab active">Catering</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <form class="container" action="#" method="get" novalidate>
+        <fieldset class="account">
+          <legend class="label">Personal Info</legend>
+          <div class="name icon-input">
+            <i class="fa-solid fa-user icon"></i
+            ><input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="email icon-input">
+            <i class="fa-solid fa-envelope icon"></i
+            ><input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="pwd icon-input">
+            <i class="fa-solid fa-mobile-screen-button icon"></i>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+        </fieldset>
+        <fieldset class="payment-details">
+          <legend class="label">Payment Details</legend>
+          <div class="card-btns">
+            <label for="visa" class="visa">
+              <i class="fa-brands fa-cc-visa icon"></i>Credit Card
+              <input
+                type="radio"
+                name="payment-type"
+                id="visa"
+                value="visa"
+                required
+              />
+            </label>
+            <label for="cash" class="cash">
+              <i class="fa-solid fa-money-bill-wave icon"></i>Cash
+              <input
+                type="radio"
+                name="payment-type"
+                id="cash"
+                value="cash"
+                required
+              />
+            </label>
+          </div>
+        </fieldset>
+        <div class="info-container">
+          <label for="information" class="label" id="information"
+            >Party Information</label
+          >
+          <textarea
+            name="information"
+            id="information"
+            cols="30"
+            rows="10"
+            placeholder="Please describe event size, location, food needed and any additional details available."
+          ></textarea>
+        </div>
+        <div class="size-when-container">
+          <div class="size-when">
+            <div class="party-size icon-input">
+              <i class="fa-solid fa-people-group icon"></i>
+              <input
+                type="text"
+                pattern="[0-9]*"
+                placeholder="Party Size"
+                id="party-size"
+                name="party-size"
+                required
+              />
+            </div>
+            <div class="when">
+              <i class="fa-solid fa-calendar-days icon"></i>
+              <input type="date" id="when" name="card-exp" required />
+            </div>
+          </div>
+        </div>
+        <div class="check">
+          <label for="newsletter" class="label" id="newsletter"
+            >Newsletter</label
+          >
+          <div class="check-newsletter">
+            <input type="checkbox" id="newsletter" name="accept" />
+            <p>
+              I would like to receive promotional offers and company information
+              sent to the email I provided.
+            </p>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    <footer>Copyright &copy; | Ozkar Alvarez</footer>
+  </body>
+</html>
