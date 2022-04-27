@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -15,10 +16,36 @@ module.exports = {
     hot: true,
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      title: "Salsipuedes Home",
+      title: "Mystic Mocha || Home",
       filename: "index.html",
-      template: path.resolve(__dirname, "src/temp.html"),
+      template: path.resolve(__dirname, "src/html/index.html"),
+    }),
+    new HtmlWebpackPlugin({
+      title: "Mystic Mocha || Menu",
+      filename: "menu.html",
+      template: path.resolve(__dirname, "src/html/menu.html"),
+    }),
+    new HtmlWebpackPlugin({
+      title: "Mystic Mocha || Contact",
+      filename: "contact.html",
+      template: path.resolve(__dirname, "src/html/contact.html"),
+    }),
+    new HtmlWebpackPlugin({
+      title: "Mystic Mocha || Restaurant",
+      filename: "restaurant.html",
+      template: path.resolve(__dirname, "src/html/restaurant.html"),
+    }),
+    new HtmlWebpackPlugin({
+      title: "Mystic Mocha || Location",
+      filename: "location.html",
+      template: path.resolve(__dirname, "src/html/location.html"),
+    }),
+    new HtmlWebpackPlugin({
+      title: "Mystic Mocha || Catering",
+      filename: "catering.html",
+      template: path.resolve(__dirname, "src/html/catering.html"),
     }),
   ],
 
@@ -26,7 +53,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
