@@ -17,6 +17,7 @@
 .restaurant {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .color-block {
@@ -146,4 +147,11 @@
   height: 100%;
   right: 40px;
   width: 800px;
+}
+
+@media (max-width: 1812px) {
+  .farm {
+    right: -180px;
+    height: 360px;
+  }
 }

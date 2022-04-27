@@ -13,6 +13,7 @@ import { initForm, validateForm } from "./catering.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   let hamburgerBtn = document.querySelector("#menu__toggle");
+  hamburgerBtn.checked = false;
 
   hamburgerBtn.addEventListener("input", () => {
     if (hamburgerBtn.checked) {
