@@ -9,10 +9,20 @@ import bg from "./images/lofi-bg.jpg";
 import addHome from "./home.js";
 import addMenu from "./menu.js";
 import addContact from "./contact.js";
+
 import barista from "./images/barista.jpg";
+import coffeeBanner from "./images/coffee-banner.jpg";
+import coffeeLogo from "./images/coffee-logo-transparent.png";
+import farm from "./images/farm-transparent.png";
+import lattePour from "./images/latte-pour.jpg";
+import mexEagle from "./images/mex-eagle-transparent.png";
+import mexOutline from "./images/mexico-outline.png";
+import headshot from "./images/owner-headshot.jpg";
+
 import { initForm, validateForm } from "./catering.js";
 
 window.addEventListener("DOMContentLoaded", () => {
+  console.log(window.location.pathname);
   let hamburgerBtn = document.querySelector("#menu__toggle");
   hamburgerBtn.checked = false;
 
