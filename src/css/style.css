@@ -16,12 +16,12 @@
 body {
   display: grid;
   background-image: url("/src/images/lofi-bg.jpg");
-
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   grid-template: 60px 1fr 40px / 1fr;
   font-family: "Bai Jamjuree", sans-serif;
+  height: 100vh;
 }
 .no-bg {
   background-image: none;
@@ -160,6 +160,7 @@ nav li a:hover::after {
   nav a:not(.logo-container) {
     display: none;
   }
+
   .menu__btn {
     display: block;
   }
