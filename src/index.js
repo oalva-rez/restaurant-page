@@ -34,12 +34,21 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // localhost path names
   if (window.location.pathname == "/menu.html") {
     let content = document.querySelector(".content");
     content.appendChild(addMenu());
   }
-
   if (window.location.pathname == "/catering.html") {
+    initForm();
+  }
+
+  // github pages path names
+  if (window.location.pathname == "/restaurant-page/menu.html") {
+    let content = document.querySelector(".content");
+    content.appendChild(addMenu());
+  }
+  if (window.location.pathname == "/restaurant-page/catering.html") {
     initForm();
   }
 });
