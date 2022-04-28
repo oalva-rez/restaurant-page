@@ -1,11 +1,11 @@
-import ramen from "/src/items-imgs/ramen-thumbnail.jpg";
-import miso from "/src/items-imgs/miso-thumbnail.jpg";
-import spanish from "/src/items-imgs/spanish-roll-thumbnail.jpg";
-import spicy from "/src/items-imgs/spicy-tuna-thumbnail.jpg";
-import boba from "/src/items-imgs/boba-thumbnail.jpg";
-import latte from "/src/items-imgs/latte-thumbnail.jpg";
-import machiatto from "/src/items-imgs/machiatto-thumbnail.jpg";
-import matcha from "/src/items-imgs/matcha-thumbnail.jpg";
+import ramen from "./items-imgs/ramen-thumbnail.jpg";
+import miso from "./items-imgs/miso-thumbnail.jpg";
+import spanish from "./items-imgs/spanish-roll-thumbnail.jpg";
+import spicy from "./items-imgs/spicy-tuna-thumbnail.jpg";
+import boba from "./items-imgs/boba-thumbnail.jpg";
+import latte from "./items-imgs/latte-thumbnail.jpg";
+import machiatto from "./items-imgs/machiatto-thumbnail.jpg";
+import matcha from "./items-imgs/matcha-thumbnail.jpg";
 function addMenu() {
   let items = {
     Ramen: {
