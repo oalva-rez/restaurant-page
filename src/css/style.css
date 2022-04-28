@@ -12,6 +12,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
 
+.home-social a,
+.social-media a,
+.menu__btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.home-social a:focus,
+.social-media a:focus,
+.menu__btn:focus {
+  outline: none !important;
+}
+
 /* template */
 body {
   display: grid;
@@ -111,6 +128,7 @@ nav li a:hover::after {
   height: 26px;
   cursor: pointer;
 }
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
