@@ -27,10 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let content = document.querySelector(".content");
     content.appendChild(addMenu());
   }
-  if (window.location.pathname == "/contact.html") {
-    let content = document.querySelector(".content");
-    content.appendChild(addContact());
-  }
+
   if (window.location.pathname == "/catering.html") {
     initForm();
   }

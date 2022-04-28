@@ -11,7 +11,7 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 
 /* home page */
 .home-wrapper {
@@ -20,7 +20,7 @@
     90deg,
     rgba(239, 214, 186, 1) 0%,
     rgba(235, 149, 73, 1) 33%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(255, 255, 255, 1) 130%
   );
   height: 100%;
   display: grid;
@@ -36,7 +36,7 @@
 }
 .mexico-outline {
   width: 900px;
-  right: -14%;
+  right: 0;
   top: 10%;
 }
 
@@ -94,7 +94,7 @@
 }
 .home-subheading .home-h3 {
   font-size: 1.4rem;
-  font-weight: 600;
+
   margin-bottom: 4px;
 }
 .home-subheading p {
@@ -139,6 +139,7 @@
 
 @media (max-width: 1180px) {
   .home {
+    margin: 0;
     gap: 2rem;
     flex-direction: column;
   }
@@ -159,7 +160,19 @@
 }
 
 @media (max-width: 796px) {
+  .home {
+    margin: 30px 0 30px 0px;
+  }
+  .home-wrapper {
+    background: linear-gradient(
+      90deg,
+      rgb(234, 202, 165) -20%,
+      rgba(235, 149, 73, 1) 33%,
+      rgba(224, 155, 94, 0.836) 100%
+    );
+  }
   .mexico-outline {
+    width: 750px;
     right: -50%;
   }
   .home-subheading {
@@ -186,5 +199,8 @@
   }
   .home-images {
     display: none;
+  }
+  .mexico-outline {
+    right: -90%;
   }
 }
