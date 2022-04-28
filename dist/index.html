@@ -9,10 +9,33 @@
       crossorigin="anonymous"
     ></script>
     <title>Mystic Mocha Cafe</title>
-  <script defer src="main.f0c9a082445244b01e23.js"></script><link href="main.css" rel="stylesheet"></head>
+  <script defer src="main.708d99dd570d4ae61617.js"></script><link href="main.css" rel="stylesheet"></head>
+
   <body class="no-bg">
+    <ul class="menu__box">
+      <li><a href="index.html" class="home-tab menu__item active">Home</a></li>
+      <li>
+        <a href="restaurant.html" class="restaurant-tab menu__item"
+          >Restaurant</a
+        >
+      </li>
+      <li><a href="menu.html" class="menu-tab menu__item">Menu</a></li>
+      <li><a href="contact.html" class="contact-tab menu__item">Contact</a></li>
+      <li>
+        <a href="location.html" class="location-tab menu__item">Location</a>
+      </li>
+      <li>
+        <a href="catering.html" class="catering-tab menu__item">Catering</a>
+      </li>
+    </ul>
     <nav>
       <ul>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+        </div>
         <li><a href="index.html" class="home-tab active">Home</a></li>
         <li>
           <a href="restaurant.html" class="restaurant-tab">Restaurant</a>
@@ -31,25 +54,25 @@
     </nav>
     <div class="home-wrapper">
       <img
-        src="/images/mexico-outline.png"
+        src="mexico-outline.png"
         alt="outline drawing of mexico's states"
         class="mexico-outline trans-bg"
       />
 
       <img
-        src="/images/coffee-logo-transparent.png"
+        src="coffee-logo-transparent.png"
         alt="clip art of coffee cup "
         class="coffee-transparent trans-bg"
       />
       <div class="home">
         <div class="home-images">
           <img
-            src="./images/barista.jpg"
+            src="barista.jpg"
             alt="Barista working behind cafe bar"
             class="barista"
           />
           <img
-            src="./images/latte-pour.jpg"
+            src="latte-pour.jpg"
             alt="Womans hand pouring frothing milk in latte"
             class="latte-pour"
           />
@@ -67,7 +90,7 @@
             artists, writers, sensory scientists, bakers, designers, and
             all-around dreamers.
           </p>
-          <a href="catering.html" class="order-catering">Order Catering Now</a>
+          <a href="catering.html" class="order-catering">Order Catering</a>
         </div>
         <div class="home-social">
           <a href=""><i class="fa-brands fa-snapchat"></i></a>
