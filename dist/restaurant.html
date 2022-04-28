@@ -5,17 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mystic Mocha Cafe</title>
-  <script defer src="main.f0c9a082445244b01e23.js"></script><link href="main.css" rel="stylesheet"></head>
+  <script defer src="main.f16bbd828a88b74c0941.js"></script><link href="main.css" rel="stylesheet"></head>
   <body class="no-bg">
     <div class="frosted-bg"></div>
+    <ul class="menu__box">
+      <li><a href="index.html" class="home-tab menu__item">Home</a></li>
+      <li>
+        <a href="restaurant.html" class="restaurant-tab menu__item active"
+          >Restaurant</a
+        >
+      </li>
+      <li><a href="menu.html" class="menu-tab menu__item">Menu</a></li>
+      <li><a href="contact.html" class="contact-tab menu__item">Contact</a></li>
+      <li>
+        <a href="location.html" class="location-tab menu__item">Location</a>
+      </li>
+      <li>
+        <a href="catering.html" class="catering-tab menu__item">Catering</a>
+      </li>
+    </ul>
     <nav>
       <ul>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+        </div>
         <li><a href="index.html" class="home-tab">Home</a></li>
         <li>
           <a href="restaurant.html" class="restaurant-tab active">Restaurant</a>
         </li>
         <li><a href="menu.html" class="menu-tab">Menu</a></li>
-        <a href="index.html">
+        <a href="index.html" class="logo-container">
           <h1 class="company-name">
             <span class="first-word">Mystic Mocha</span>
             <span class="second-word">Cafe</span>
@@ -23,7 +45,9 @@
         </a>
         <li><a href="contact.html" class="contact-tab">Contact</a></li>
         <li><a href="location.html" class="location-tab">Location</a></li>
-        <li><a href="catering.html" class="catering-tab">Catering</a></li>
+        <li>
+          <a href="catering.html" class="catering-tab">Catering</a>
+        </li>
       </ul>
     </nav>
     <div class="restaurant">
@@ -38,7 +62,7 @@
       <div class="shop-bio-container">
         <div class="shop-bio">
           <img
-            src="./images/mex-eagle-transparent.png"
+            src="./images/mex-eagle-transparent.PNG"
             alt="mexican eagle eating snake emblem"
             class="mex-eagle"
           />

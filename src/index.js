@@ -9,6 +9,7 @@ import bg from "./images/lofi-bg.jpg";
 import addHome from "./home.js";
 import addMenu from "./menu.js";
 import addContact from "./contact.js";
+import barista from "./images/barista.jpg";
 import { initForm, validateForm } from "./catering.js";
 
 window.addEventListener("DOMContentLoaded", () => {
