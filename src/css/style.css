@@ -12,9 +12,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
 
+/* remove on press highlighting */
 .home-social a,
 .social-media a,
-.menu__btn {
+.menu__btn,
+.visa,
+.cash {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -25,7 +28,9 @@
 }
 .home-social a:focus,
 .social-media a:focus,
-.menu__btn:focus {
+.menu__btn:focus,
+.visa,
+.cash {
   outline: none !important;
 }
 
