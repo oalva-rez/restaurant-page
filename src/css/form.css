@@ -131,7 +131,7 @@ input[type="radio"] {
   transition: background-color 350ms;
 }
 .on {
-  background-color: #795f37c6 !important;
+  background-color: #eb9549 !important;
   color: white !important;
   border: solid rgba(0, 0, 0, 0.246) 1px !important;
 }

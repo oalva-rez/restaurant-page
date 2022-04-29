@@ -22,9 +22,6 @@ function initForm() {
   form.addEventListener("submit", validateForm);
 }
 function validateForm(evt) {
-  const formElements = document.forms[0].elements;
-  const inputs = formElements.querySelectorAll("input");
-
   evt.preventDefault();
 }
 
