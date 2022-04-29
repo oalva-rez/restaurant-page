@@ -102,7 +102,8 @@
   background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
   background-color: #ffc477;
   border-radius: 6px;
-  border: 1px solid #eeb44f;
+  border: none;
+  outline: none;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -157,7 +158,8 @@
   background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
   background-color: #ffc477;
   border-radius: 6px;
-  border: 1px solid #eeb44f;
+  border: none;
+  outline: none;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
