@@ -6,7 +6,8 @@ import boba from "./items-imgs/boba-thumbnail.jpg";
 import latte from "./items-imgs/latte-thumbnail.jpg";
 import machiatto from "./items-imgs/machiatto-thumbnail.jpg";
 import matcha from "./items-imgs/matcha-thumbnail.jpg";
-function addMenu() {
+
+export default function addMenu() {
   let items = {
     Ramen: {
       desc: "This item is a fan favorite among locals. Half off every Wednesday.",
@@ -79,5 +80,3 @@ function addMenu() {
   }
   return menuContainer;
 }
-
-export default addMenu;

@@ -6,9 +6,8 @@ import menu from "./css/menu.css";
 import contact from "./css/contact.css";
 import location from "./css/location.css";
 import bg from "./images/lofi-bg.jpg";
-import addHome from "./home.js";
 import addMenu from "./menu.js";
-import addContact from "./contact.js";
+import { initForm, validateForm } from "./catering.js";
 
 import barista from "./images/barista.jpg";
 import coffeeBanner from "./images/coffee-banner.jpg";
@@ -19,13 +18,9 @@ import mexEagle from "./images/mex-eagle-transparent.png";
 import mexOutline from "./images/mexico-outline.png";
 import headshot from "./images/owner-headshot.jpg";
 
-import { initForm, validateForm } from "./catering.js";
-
 window.addEventListener("DOMContentLoaded", () => {
-  console.log(window.location.pathname);
   let hamburgerBtn = document.querySelector("#menu__toggle");
   hamburgerBtn.checked = false;
-
   hamburgerBtn.addEventListener("input", () => {
     if (hamburgerBtn.checked) {
       document.querySelector(".menu__box").style.left = "0";
