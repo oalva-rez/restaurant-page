@@ -3,6 +3,9 @@
 <h2>Learning Outcomes</h2>
 <p>This project allowed me to apply the ideas I learned throughout the semester which were mainly focused around accessibility, usability, acceptance criteria, and user testing. In addition, I further developed my CSS/HTML skills along with asset management practices for better performance using npm and webpack. One main takeaway from this project was writing the acceptance criteria for functionality using the "Given/When/Then" approach. I used the NVDA screen reader app to run accessibility tests of my own.</p>
 
-
+<h2>Whats Next?</h2>
+<li>Admin panel with user auth via PHP.</li>
+<li>JEST testing scripts.</li>
+<li>Form validation for "Catering" page.</li>
 <h2>Mystic Mocha Cafe</h2>
 <b><a href="https://oalva-rez.github.io/restaurant-page/">Live version</a></b>
